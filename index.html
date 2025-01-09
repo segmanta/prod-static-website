@@ -1,13 +1,125 @@
-<html>
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: linear-gradient(90deg, #4CAF50, #3E8E41);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            color: #666;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
 <body>
 
 
-<script>!function(e,t,s){if(!e.getElementById(s)){var a=e.getElementsByTagName(t)[0],r=document.createElement(t);r.id=s,r.src="https://pge.segmanta.com/widget_embed_js/widgetEmbed-v7.min.js",a.parentNode.insertBefore(r,a)}}(document,"script","seg-embedjs");</script>
+<!-- Segmanta Code -->
+<script>!function(e,t,s,k,l,p){if(!e.getElementById(s)){var a=e.getElementsByTagName(t)[0],r=document.createElement(t);r.setAttribute(s,k),r.setAttribute(l,p),r.src="https://app.staging.segmanta.com/widget_embed_js/dynamicEmbed-0.1.min.js",a.parentNode.insertBefore(r,a)}}(document,"script","data-segmanta-account-id",1,"data-segmanta-host","https://app.staging.segmanta.com");</script>
 
-<div class="segmanta-embed" data-embed-data="%7B%22publicId%22:%226r0e53%22,%22surveysHost%22:%22https://pgsurveys.segmanta.com%22,%22surveyId%22:12370,%22width%22:635,%22height%22:600,%22mobileHeight%22:500,%22widthUnits%22:%22px%22,%22heightUnits%22:%22px%22,%22mobileHeightUnits%22:%22px%22,%22isFullscreen%22:true,%22skipWelcome%22:false,%22embedType%22:%22dialog%22,%22embedSize%22:%22fullscreen%22,%22trigger%22:%22always%22,%22cornerButton%22:true,%22cornerButtonText%22:%22Feedback%22,%22cornerButtonCloseText%22:%22Minimize%22,%22cornerWidgetAlignment%22:%22RIGHT%22,%22cornerWidgetBottomDesktop%22:20,%22cornerWidgetBottomMobile%22:20,%22autoCloseOnEnding%22:true,%22hasPreSurveyDialog%22:false,%22preSurveyDialog%22:%7B%22title%22:%22Would%20you%20like%20to%20take%20a%20survey?%22,%22subtitle%22:%22Don't%20worry,%20it's%20quick%20and%20fun!%22,%22include_later_button%22:true%7D,%22delay%22:0,%22mode%22:%22s%22,%22minimizeToCorner%22:true%7D">
-              
-            </div>
+<!-- Segmanta Code -->
 
+<script>
+window.SEGMANTA__USER_METADATA = {
+"seg_erid": "newtest123456789"
+}
+</script>
+
+<script>
+
+console.log("Hello");
+
+window.SEG_EMBED_API&&window.SEG_EMBED_API.q?window.SEG_EMBED_API=Object.assign(window.SEG_EMBED_API,{e:[],on:function(E,n){this.e.push({eventConstName:E,callback:n})}}):window.SEG_EMBED_API=window.SEG_EMBED_API||{e:[],on:function(E,n){this.e.push({eventConstName:E,callback:n})}};
+
+window.SEG_EMBED_API.on('RESPONDENT_COMPLETED_SURVEY', (scenarioid, surveyid, respondentData) => {
+  // Convert respondentData to a JSON string
+  const respondentDataJSON = JSON.stringify(respondentData);
+  
+  // Log scenarioid, surveyid, and the respondentData in JSON format
+  console.log(scenarioid, surveyid, respondentDataJSON);
+});
+
+
+</script>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Beautiful Design</h1>
+    </div>
+    <div class="content">
+        <h2>Home Page</h2>
+        <p>This is a sample home page with a modern design. Customize it to fit your needs.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+    </div>
+    <footer>
+        &copy; 2024 My Website. All rights reserved.
+    </footer>
 </body>
 </html>
