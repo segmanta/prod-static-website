@@ -6,121 +6,75 @@
     <title>Home Page</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background: linear-gradient(90deg, #4CAF50, #3E8E41);
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        nav a:hover {
-            background-color: #575757;
-            color: #fff;
-        }
-        .hero {
-            background-image: url('https://api.unsplash.com/photos/random');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        .hero h1 {
-            font-size: 4em;
-            margin: 0;
-        }
-        .content {
-            padding: 20px;
-        }
-        .content h2 {
+            background-color: #FFF4E6; /* Buttercream yellow */
             color: #333;
         }
-        .content p {
-            color: #666;
-            line-height: 1.6;
+
+        header {
+            background-color: #89CFF0; /* Hint of blue */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
         }
+
+        nav {
+            background-color: #F7DFA7; /* Slightly deeper buttercream yellow */
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #E3C56A; /* Hover buttercream tone */
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
         footer {
-            background-color: #333;
+            background-color: #89CFF0; /* Hint of blue */
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 1rem;
             position: relative;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-
-
-<!-- Segmanta Code -->
-<!-- <script>!function(e,t,s,k,l,p){if(!e.getElementById(s)){var a=e.getElementsByTagName(t)[0],r=document.createElement(t);r.setAttribute(s,k),r.setAttribute(l,p),r.src="https://app.segmanta.dev/widget_embed_js/dynamicEmbed-0.1.min.js",a.parentNode.insertBefore(r,a)}}(document,"script","data-segmanta-account-id",1,"data-segmanta-host","https://app.segmanta.dev");</script> -->
-
-<!-- Segmanta Code -->
-
-<script>
-window.SEGMANTA__USER_METADATA = {
-"seg_erid": "newtest1"
-}
-</script>
-
-<script>
-
-console.log("Hello");
-
-window.SEG_EMBED_API&&window.SEG_EMBED_API.q?window.SEG_EMBED_API=Object.assign(window.SEG_EMBED_API,{e:[],on:function(E,n){this.e.push({eventConstName:E,callback:n})}}):window.SEG_EMBED_API=window.SEG_EMBED_API||{e:[],on:function(E,n){this.e.push({eventConstName:E,callback:n})}};
-
-window.SEG_EMBED_API.on('RESPONDENT_COMPLETED_SURVEY', (scenarioid, surveyid, respondentData) => {
-  // Convert respondentData to a JSON string
-  const respondentDataJSON = JSON.stringify(respondentData);
-  
-  // Log scenarioid, surveyid, and the respondentData in JSON format
-  console.log(scenarioid, surveyid, respondentDataJSON);
-});
-
-</script>
-
-<script>window.SEG_EMBED_API = window.SEG_EMBED_API || {q: [], triggerManualScenario: function(id) {this.q.push(id)}};window.SEG_EMBED_API.triggerManualScenario(127);</script>
-
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+<script>!function(e,t,s){if(!e.getElementById(s)){var a=e.getElementsByTagName(t)[0],r=document.createElement(t);r.id=s,r.src="https://pge.segmanta.com/widget_embed_js/widgetEmbed-v7.min.js",a.parentNode.insertBefore(r,a)}}(document,"script","seg-embedjs");</script>    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
     </nav>
-    <div class="hero">
-        <h1>Beautiful Design</h1>
-    </div>
-    <div class="content">
-        <h2>Home Page</h2>
-        <p>This is a sample home page with a modern design. Customize it to fit your needs.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
-    </div>
+    <main>
+        <h1>Welcome!</h1>
+        <p>This is a simple homepage template with a buttercream yellow theme and hints of blue.</p>
+        <p>Feel free to customize this page to suit your needs.</p>
+    </main>
+<div class="segmanta-embed" data-embed-data="%7B%22publicId%22:%222g67b9%22,%22surveysHost%22:%22https://pgsurveys.segmanta.com%22,%22surveyId%22:13489,%22width%22:635,%22height%22:600,%22mobileHeight%22:500,%22widthUnits%22:%22px%22,%22heightUnits%22:%22px%22,%22mobileHeightUnits%22:%22px%22,%22isFullscreen%22:true,%22skipWelcome%22:false,%22embedType%22:%22inline%22,%22embedSize%22:%22fixed%22,%22trigger%22:%22always%22,%22cornerButton%22:true,%22cornerButtonText%22:%22Feedback%22,%22cornerButtonCloseText%22:%22Minimize%22,%22cornerWidgetAlignment%22:%22RIGHT%22,%22cornerWidgetBottomDesktop%22:20,%22cornerWidgetBottomMobile%22:20,%22autoCloseOnEnding%22:false,%22hasPreSurveyDialog%22:false,%22preSurveyDialog%22:%7B%22title%22:%22Would%20you%20like%20to%20take%20a%20survey?%22,%22subtitle%22:%22Don't%20worry,%20it's%20quick%20and%20fun!%22,%22include_later_button%22:true%7D,%22delay%22:0,%22mode%22:%22s%22,%22minimizeToCorner%22:true%7D">
+              <style>.segmanta-loader{margin:60px auto;font-size:10px;position:relative;text-indent:-9999em;border-top:1.1em solid rgba(86,164,255,.2);border-right:1.1em solid rgba(86,164,255,.2);border-bottom:1.1em solid rgba(86,164,255,.2);border-left:1.1em solid #56a4ff;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation:load8 1.1s infinite linear;animation:load8 1.1s infinite linear}.segmanta-loader,.segmanta-loader:after{border-radius:50%;width:10em;height:10em}@-webkit-keyframes load8{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes load8{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}</style><div class="segmanta-loader"></div>
+            </div>
     <footer>
-        &copy; 2024 My Website. All rights reserved.
+        &copy; 2025 Your Website. All rights reserved.
     </footer>
 </body>
 </html>
